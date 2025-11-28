@@ -12,16 +12,13 @@
       --maxw: 980px;
       --radius: 12px;
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      .avatar {
-  width: 20px;
-  height: 20px;
-  border-radius: 10%;
-  background-image: url("images/myphoto.jpg");
-  background-size: cover;
-  background-position: center;
-}
-      
-    }
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* keeps proportions while filling the box */
+    border-radius: 12px; /* same as avatar container */
+}  
+
     html,body{height:100%;margin:0;background:var(--bg);color:#111;background-color: rgb(250, 245, 241);}
     .wrap{max-width:var(--maxw);margin:36px auto;padding:40px;}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px}
@@ -50,8 +47,8 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="avatar">
-    <img src="myphoto.jpg" alt="Profile photo">
+  <div class="avatar">
+    <img src="your-image.jpg" alt="Avatar">
 </div>
         <div>
           <h1>Ndiliswa Tyobeka</h1>
@@ -128,5 +125,6 @@
   </div>
 </body>
 </html>
+
 
 
